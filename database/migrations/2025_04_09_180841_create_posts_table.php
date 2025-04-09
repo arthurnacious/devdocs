@@ -15,10 +15,14 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->foreignId('parent_post_id')->nullable()->constrained('posts')->onDelete('cascade');
+            $table->foreignId('category_id')->constrained('categories')->onDelete('cascade');
             $table->string('title');
+            $table->string('description')->nullable();
             $table->string('page_name');
             $table->string('functionality')->nullable();
             $table->text('content');
+            $table->enum('status', ['draft', 'published', 'archived'])->default('draft');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
