@@ -27,6 +27,15 @@
             <!-- Main content area -->
             <main class="flex-1 relative overflow-y-auto focus:outline-none">
 
+                <!-- Page Heading -->
+                @if (isset($header))
+                    <header class="bg-white dark:bg-zinc-800/20 shadow-md rounded-b-3xl">
+                        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                            {{ $header }}
+                        </div>
+                    </header>
+                @endif
+
                 <div class="py-6">
                     {{$slot}}
                 </div>

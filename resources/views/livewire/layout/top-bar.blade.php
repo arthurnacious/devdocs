@@ -16,7 +16,7 @@ new class extends Component
     }
 }; ?>
 
-<div class="relative z-10 flex-shrink-0 flex h-16 bg-white dark:bg-zinc-900 shadow">
+<div class="relative z-10 flex-shrink-0 flex h-16 bg-white dark:bg-zinc-900 shadow-2xl">
     <button @click="sidebarOpen = true" class="px-4 border-r border-gray-200 dark:border-zinc-700 text-gray-500 dark:text-gray-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 md:hidden">
         <span class="sr-only">Open sidebar</span>
         <i class="fas fa-bars"></i>
@@ -29,7 +29,7 @@ new class extends Component
                     <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                         <i class="fas fa-search text-gray-400"></i>
                     </div>
-                    <input id="search" class="block w-full pl-10 pr-3 py-2 border border-gray-300 dark:border-zinc-700 rounded-md leading-5 bg-white dark:bg-zinc-800 dark:text-gray-100 placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 sm:text-sm" placeholder="Search" type="search">
+                    <x-text-input id="search" name="search" type="text" class="pl-10 mt-1"  placeholder="Search" type="search" />
                 </div>
             </div>
         </div>
@@ -39,7 +39,7 @@ new class extends Component
                 <div>
                     <button @click="open = !open" class="p-1 rounded-full text-gray-400 dark:text-gray-300 hover:text-gray-500 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 relative">
                         <span class="sr-only">View notifications</span>
-                        <i class="fas fa-bell text-2xl"></i>
+                        <i class="fas fa-bell text-3xl"></i>
                         <span class="absolute top-0 right-0 block h-2 w-2 rounded-full bg-red-500 ring-2 ring-white dark:ring-zinc-800"></span>
                     </button>
                 </div>
@@ -84,7 +84,7 @@ new class extends Component
                     </button>
                 </div>
                 <div x-show="open" @click.away="open = false" class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white dark:bg-zinc-800 ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
-                    <a href="#" wire:navigate class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-zinc-700" role="menuitem">Your Profile</a>
+                    <a href="{{route('profile')}}" wire:navigate class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-zinc-700" role="menuitem">Your Profile</a>
                     <a href="#" wire:navigate class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-zinc-700" role="menuitem">Settings</a>
                     <button wire:click="logout" class="w-full px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-zinc-700 text-left" role="menuitem">Sign out</button>
                 </div>

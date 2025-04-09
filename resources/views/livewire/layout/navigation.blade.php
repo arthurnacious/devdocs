@@ -17,7 +17,7 @@ new class extends Component
 
 }; ?>
 
-<div  x-data="{ sidebarOpen: false }" class="min-h-screen flex"><!-- Sidebar for mobile - off-canvas menu -->
+<div  x-data="{ sidebarOpen: false }" class="min-h-screen flex shadow-2xl"><!-- Sidebar for mobile - off-canvas menu -->
     <div x-show="sidebarOpen" class="fixed inset-0 flex z-40 md:hidden" role="dialog" aria-modal="true">
         <div x-show="sidebarOpen" x-transition:enter="transition-opacity ease-linear duration-300"
             x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
@@ -45,10 +45,10 @@ new class extends Component
                     </span>
                 </div>
                 <nav class="mt-5 px-2 space-y-1">
-                    <a href="#" class="group flex items-center px-2 py-2 text-base font-medium rounded-md text-white bg-zinc-700 dark:bg-[rgb(48,48,46)]">
+                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" wire:navigate >
                         <i class="fas fa-home mr-3 text-gray-300"></i>
                         Dashboard
-                    </a>
+                    </x-nav-link>
                     <a href="#" class="group flex items-center px-2 py-2 text-base font-medium rounded-md text-gray-300 hover:bg-zinc-700 hover:text-white">
                         <i class="fas fa-users mr-3 text-gray-400"></i>
                         Users
@@ -96,26 +96,26 @@ new class extends Component
                     </div>
                     <div class="mt-5 flex-1 flex flex-col">
                         <nav class="flex-1 px-2 space-y-1">
-                            <a href="#" class="group flex items-center px-2 py-2 text-sm font-medium rounded-md text-white bg-zinc-700 dark:bg-[rgb(48,48,46)]">
+                            <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" wire:navigate >
                                 <i class="fas fa-home w-6 mr-3 text-gray-300"></i>
                                 Dashboard
-                            </a>
-                            <a href="#" class="group flex items-center px-2 py-2 text-sm font-medium rounded-md text-gray-300 hover:bg-zinc-700 hover:text-white">
+                            </x-nav-link>
+                             <x-nav-link :href="route('dashboard')" :active="request()->routeIs('users')" wire:navigate >
                                 <i class="fas fa-users w-6 mr-3 text-gray-400"></i>
                                 Users
-                            </a>
-                            <a href="#" class="group flex items-center px-2 py-2 text-sm font-medium rounded-md text-gray-300 hover:bg-zinc-700 hover:text-white">
+                             </x-nav-link>
+                             <x-nav-link :href="route('dashboard')" :active="request()->routeIs('settings')" wire:navigate >
                                 <i class="fas fa-cog w-6 mr-3 text-gray-400"></i>
                                 Settings
-                            </a>
-                            <a href="#" class="group flex items-center px-2 py-2 text-sm font-medium rounded-md text-gray-300 hover:bg-zinc-700 hover:text-white">
+                             </x-nav-link>
+                             <x-nav-link :href="route('dashboard')" :active="request()->routeIs('analytics')" wire:navigate >
                                 <i class="fas fa-chart-bar w-6 mr-3 text-gray-400"></i>
                                 Analytics
-                            </a>
-                            <a href="#" class="group flex items-center px-2 py-2 text-sm font-medium rounded-md text-gray-300 hover:bg-zinc-700 hover:text-white">
+                             </x-nav-link>
+                             <x-nav-link :href="route('dashboard')" :active="request()->routeIs('reports')" wire:navigate >
                                 <i class="fas fa-file-alt w-6 mr-3 text-gray-400"></i>
                                 Reports
-                            </a>
+                             </x-nav-link>
                         </nav>
                     </div>
                 </div>
