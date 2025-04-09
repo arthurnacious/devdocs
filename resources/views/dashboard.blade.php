@@ -5,18 +5,13 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
             <div class="py-4">
                 <!-- Dashboard content goes here -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
                     <!-- Stats cards -->
                     <div class="bg-white dark:bg-zinc-800 overflow-hidden shadow rounded-lg">
                         <div class="px-4 py-5 sm:p-6">
                             <dl>
                                 <dt class="text-sm font-medium text-gray-500 dark:text-gray-400 truncate">Total Users</dt>
-                                <dd class="mt-1 text-3xl font-semibold text-gray-900 dark:text-white">12,453</dd>
-                                <dd class="mt-2 flex items-center text-sm text-green-600 dark:text-green-500">
-                                    <i class="fas fa-arrow-up mr-1"></i>
-                                    <span class="font-medium">3.2%</span>
-                                    <span class="ml-1 text-gray-500 dark:text-gray-400">from last month</span>
-                                </dd>
+                                <dd class="mt-1 text-3xl font-semibold text-gray-900 dark:text-white">2</dd>
                             </dl>
                         </div>
                     </div>
@@ -24,13 +19,8 @@
                     <div class="bg-white dark:bg-zinc-800 overflow-hidden shadow rounded-lg">
                         <div class="px-4 py-5 sm:p-6">
                             <dl>
-                                <dt class="text-sm font-medium text-gray-500 dark:text-gray-400 truncate">New Signups</dt>
+                                <dt class="text-sm font-medium text-gray-500 dark:text-gray-400 truncate">Posts</dt>
                                 <dd class="mt-1 text-3xl font-semibold text-gray-900 dark:text-white">2,376</dd>
-                                <dd class="mt-2 flex items-center text-sm text-green-600 dark:text-green-500">
-                                    <i class="fas fa-arrow-up mr-1"></i>
-                                    <span class="font-medium">5.4%</span>
-                                    <span class="ml-1 text-gray-500 dark:text-gray-400">from last week</span>
-                                </dd>
                             </dl>
                         </div>
                     </div>
@@ -38,30 +28,12 @@
                     <div class="bg-white dark:bg-zinc-800 overflow-hidden shadow rounded-lg">
                         <div class="px-4 py-5 sm:p-6">
                             <dl>
-                                <dt class="text-sm font-medium text-gray-500 dark:text-gray-400 truncate">Active Projects</dt>
-                                <dd class="mt-1 text-3xl font-semibold text-gray-900 dark:text-white">432</dd>
-                                <dd class="mt-2 flex items-center text-sm text-red-600 dark:text-red-500">
-                                    <i class="fas fa-arrow-down mr-1"></i>
-                                    <span class="font-medium">1.3%</span>
-                                    <span class="ml-1 text-gray-500 dark:text-gray-400">from yesterday</span>
-                                </dd>
+                                <dt class="text-sm font-medium text-gray-500 dark:text-gray-400 truncate">Unresolved Issues</dt>
+                                <dd class="mt-1 text-3xl font-semibold text-red-500">432</dd>
                             </dl>
                         </div>
                     </div>
 
-                    <div class="bg-white dark:bg-zinc-800 overflow-hidden shadow rounded-lg">
-                        <div class="px-4 py-5 sm:p-6">
-                            <dl>
-                                <dt class="text-sm font-medium text-gray-500 dark:text-gray-400 truncate">Revenue</dt>
-                                <dd class="mt-1 text-3xl font-semibold text-gray-900 dark:text-white">$63,246</dd>
-                                <dd class="mt-2 flex items-center text-sm text-green-600 dark:text-green-500">
-                                    <i class="fas fa-arrow-up mr-1"></i>
-                                    <span class="font-medium">7.2%</span>
-                                    <span class="ml-1 text-gray-500 dark:text-gray-400">from last month</span>
-                                </dd>
-                            </dl>
-                        </div>
-                    </div>
                 </div>
 
                 <!-- Activity list -->
