@@ -25,6 +25,7 @@ class PostFactory extends Factory
             'category_id' => fake()->randomElement(Category::all()->pluck('id')),
             'title' => fake()->sentence(),
             'page_name' => fake()->sentence(),
+            'description' => fake()->paragraph(),
             'functionality' => fake()->sentence(),
             'content' => fake()->paragraph(),
             'status' => fake()->randomElement(['draft', 'published', 'archived']),

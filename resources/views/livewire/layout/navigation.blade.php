@@ -108,7 +108,7 @@ new class extends Component
                                 <i class="fas fa-cog w-6 mr-3 text-gray-400"></i>
                                 Settings
                              </x-nav-link>
-                             <x-nav-link :href="route('posts')" :active="request()->routeIs('posts')" wire:navigate >
+                             <x-nav-link :href="route('posts.index')" :active="request()->routeIs('posts.index')" wire:navigate >
                                 <i class="fas fa-chart-bar w-6 mr-3 text-gray-400"></i>
                                 Doc Posts
                              </x-nav-link>
