@@ -108,9 +108,9 @@ new class extends Component
                                 <i class="fas fa-cog w-6 mr-3 text-gray-400"></i>
                                 Settings
                              </x-nav-link>
-                             <x-nav-link :href="route('dashboard')" :active="request()->routeIs('analytics')" wire:navigate >
+                             <x-nav-link :href="route('posts')" :active="request()->routeIs('posts')" wire:navigate >
                                 <i class="fas fa-chart-bar w-6 mr-3 text-gray-400"></i>
-                                Analytics
+                                Doc Posts
                              </x-nav-link>
                              <x-nav-link :href="route('dashboard')" :active="request()->routeIs('reports')" wire:navigate >
                                 <i class="fas fa-file-alt w-6 mr-3 text-gray-400"></i>
